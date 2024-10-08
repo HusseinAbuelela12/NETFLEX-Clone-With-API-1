@@ -1,0 +1,115 @@
+nav {
+    background-color: transparent;
+}
+.navItems .navItem,
+.navItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+
+}
+.navItems .navItem ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.navItems .navItem ul li{
+    margin: 20px;
+}
+.navItems .navItem ul li a{
+    font-size: 18px;
+    color: #f0f0f0;
+}
+.navItems .navItem img {
+    width: 148px;
+    cursor: pointer;
+}
+.navItems .navItem1 img {
+    width: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.navItems .navItem1 i {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #f0f0f0;
+}
+/* section 2 */
+.fsec {
+    height: 80vh;
+}
+.mainFsec {
+    margin-top: 110px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+.mainFsec h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.mainFsec .buttond button {
+    padding: 6px 0;
+    width: 90px;
+    outline: none;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    font-size: 19px;
+    background-color: rgba(73, 70, 70, 0.945);
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ////////////////////////////////////////////////// */
+.sliderSec h2 {
+    margin: 100px 30px 60px 40px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+/* ///////////////////////////swiper js ///////////////////*/
+.datailsDiv {
+    background-color: rgb(75, 70, 70);
+    width: 100%;
+}
+
+.swiper {
+        width: 95%;
+        height: 100%;
+    }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* /////////////////////////////////////media /////////////////// */
+@media (max-width: 991.98px) {
+    .navItems .navItem ul {
+        display: none;
+    }
+    .mainFsec {
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 575.98px) { 
+
+}
+
+/* /////////////////////////////////////media /////////////////// */

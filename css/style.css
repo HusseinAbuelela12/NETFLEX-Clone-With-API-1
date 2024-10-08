@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+/* start header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 180px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+header img {
+    width: 148px;
+}
+footer div ul li select,
+header select {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 6px 3px 6px 30px;
+    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+footer div ul li select,
+header select:focus {
+    outline: 1px solid white;
+}
+footer div ul li select option,
+header select option {
+    color: #222;
+}
+footer div ul .li-foot ,
+header .selectmenu {
+    position: relative;
+}
+footer div ul .li-foot i,
+header .selectmenu i {
+    position: absolute;
+    color: white;
+    top :10px;
+    left: 10px;
+}
+header a {
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #e20813;
+    color: white;
+    border-radius: 5px;
+}
+header a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* end header */
+/* start first section */
+.first {
+    min-height: 100vh;
+    background-image: url(../image/EG-ar-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_1de8e2d3-4b3a-4f96-af6a-5027a1e8cc4e_small.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 8px solid #222;
+}
+.first::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#00000000,transparent);
+}
+.first::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#0000001f,transparent);
+}
+.accordion-last,
+.first div {
+    text-align: center;
+    z-index: 2;
+}
+.first div h2{
+    font-size: 45px;
+    margin-top: 80px;
+    color: white;
+    line-height: 47.5px;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+.first div h3 {
+    font-size: 25px;
+    color: white;
+    margin: 12px 0 16px;
+}
+.accordion-last p,
+.first div p {
+    font-size: 25px;
+    margin: 16px 0;
+    color: white;
+    font-weight: 500;
+}
+.accordion-last form,
+.first div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+.accordion-last input[type="email"],
+.first div form input[type="email"] {
+    padding: 12px 50px 12px 5px;
+    width: 320px;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 19px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.accordion-last input[type="email"]::placeholder,
+.first div form input[type="email"]::placeholder {
+    color: #4c4c5d;
+    font-size: 20px;
+    text-indent: 10px;
+}
+.accordion-last button,
+.first div form button {
+    padding: 10px 30px;
+    font-weight: 600;
+    border: none;
+    background-color: #e20813;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+}
+/* end first section */
+/* start second section */
+.imgSoc,
+.videoSec { 
+    color: white;
+    border-bottom: 8px solid #222;
+    padding: 40px 180px;
+    text-align: left; 
+}
+.imgSoc h3,
+.videoSec h3 {
+    font-size: 43px;
+    font-weight: 600;
+}
+.imgSoc p,
+.videoSec p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.videoSecDiv {
+    position: relative;
+    width: 600px;
+}
+.videoSecDiv img {
+    width: 600px;
+}
+.videoSecDiv video {
+    position: absolute;
+    width: 480px;
+    top: 70px;
+    left: 64px;
+    z-index: -1;
+}
+
+/* end second section */
+/* start third section */
+.imgSoc .row .imageT {
+    display: flex;
+    justify-content: center;
+}
+.imgSoc .row img {
+    width: 600px;
+}
+
+/* end Third section */
+/* start forth section */
+
+.videoSecDiv2 {
+    position: relative;
+    width: 600px;
+}
+.videoSecDiv2 img {
+    width: 100%;
+}
+.videoSecDiv2 video {
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    z-index: -1;
+}
+
+/* end forth section */
+/* start last section */
+.imgSoc .last img{
+    width: 508px;
+}
+/* end last section */
+/* start last-section section */
+
+.last-section {
+    padding: 50px 150px;
+    border-bottom: 8px solid #222;
+}
+.last-section h3 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 50px 0;
+    font-weight: 900;
+}
+.last-section .list {
+    width: 95%;
+    margin: auto;
+}
+.accordion {
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+    padding: 13px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transform: all 0.4s;
+    border-bottom: 1px solid black ;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion::after {
+    content: "\002B";
+    font-size: 40px;
+    margin-left: 5px;
+}
+.active::after {
+    content: "\2212";
+}
+.panel {
+    background-color: #303030;
+    font-size: 20px;
+    padding: 0 20px;
+    max-height: 0 ;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+}
+.accordion-last {
+    margin: 80px 0;
+}
+
+/* end last-section section */
+/* start footer */
+
+footer {
+    padding: 30px 100px;
+}
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+footer a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer div ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+footer div ul{
+    padding-left:0 ;
+}
+footer div ul .li-foot{
+    margin: 20px 0;
+}
+footer div p{
+    color: #757575;
+}
+
+/* end footer */
+/* start media */
+
+@media (max-width: 991.98px) { 
+    header {
+        padding: 25px 80px 0px;
+    }
+    .first {
+        min-height: 80vh;
+    }
+    .first div h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .last-section form ,
+    .first div form {
+        flex-direction: column;
+    }
+    .last-section form input[type="email"] ,
+    .first div form input[type="email"] {
+        margin-bottom: 10px;
+    }
+    .imgSoc,
+    .videoSec {
+        padding: 40px 15px;
+        text-align: center; 
+    }
+    .imgSoc h3,
+    .videoSec h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .imgSoc img{
+        margin-bottom: 30px;
+    }
+    .videoSecDiv { 
+        margin: auto;
+    }
+    .videoSecDiv img {
+        width: 480px;
+    }
+    .videoSecDiv video {
+        width: 360px;
+        top: 70px;
+        left: 114px;
+    }
+    .videoSecDiv2 img {
+        width: 480px;
+    }
+    .videoSecDiv2 video {
+        width: 300px;
+        top: 30px;
+        left: 150px;
+    }
+    .last-section {
+        padding: 50px 10px;
+    }
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    header {
+        padding: 25px 10px 0px;
+    }
+    header select {
+        padding: 6px 3px 6px 25px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .videoSecDiv {
+        width: 360px;
+    }
+    .videoSecDiv img {
+        width: 360px;
+    }
+    .videoSecDiv video {
+        width: 260px;
+        top: 57px;
+        left: 48px;
+    }
+    .videoSecDiv2 {
+        width: 350px;
+    }
+    .videoSecDiv2 img {
+        width: 350px;
+    }
+    .videoSecDiv2 video {
+        width: 220px;
+        top: 30px;
+        left: 70px;
+    }
+    .imgSoc .row img {
+        width: 340px;
+    }
+    .imgSoc .last img{
+        width: 340px;
+    }
+    .last-section {
+        padding: 50px 10px;
+    }
+}
+
+
+
+/* end media */
